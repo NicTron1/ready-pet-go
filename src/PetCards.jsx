@@ -1,9 +1,17 @@
 import React, {useState} from 'react'
 import "./PetCards.css"
 import TinderCard from "react-tinder-card"
+import { getUserData } from "./auth"
+import { getAuth, getPets } from './petFinder'
+import { terminal } from 'virtual:terminal'
 
 
-function PetCards() {
+async function PetCards() {
+    let userId = 'google-oauth2|111903263393647349855'
+    let userData = await getUserData(userId)
+    let petFinderAuth  =  await getAuth()
+    let petList = await getPets(petFinderAuth, userData.user_metadata)
+    //terminal.log(petList)
     const [people, setPeople] = useState([
         {
             name: "Charles",

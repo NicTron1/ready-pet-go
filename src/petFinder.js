@@ -1,8 +1,8 @@
-const fetch = require('node-fetch');
-const qs = require('qs');
+import fetch from 'node-fetch'
+import qs from 'qs'
 
 //Function has predefined auth and no params, returns bearer
-async function getAuth() {
+export async function getAuth() {
     let finalData
     let key = 'XkuOloGSdjIsBR7dR0D8nK8IXtCUrniiiZxHHlcANkynZRYzq8'
     let secret = 'ilkTpZvCTBhbu6yVCqszRPhqrwhzN5iUZkv1r1W0'
@@ -26,7 +26,7 @@ async function getAuth() {
 }
 
 //Function will intake auth and pet params and return a list of pet objects
-async function getPets(auth, params) {
+export async function getPets(auth, params) {
     let expires = new Date().getTime() + (auth.expires_in * 1000);
     let finalData
     await fetch('https://api.petfinder.com/v2/animals?'+qs.stringify(params), {

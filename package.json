@@ -18,14 +18,26 @@
     "eslint-plugin-react": "^7.32.2",
     "eslint-plugin-react-hooks": "^4.6.0",
     "eslint-plugin-react-refresh": "^0.4.3",
-    "vite": "^4.4.5"
+    "vite": "^4.4.5",
+    "vite-plugin-terminal": "^1.1.0"
   },
   "dependencies": {
     "@auth0/auth0-react": "^2.2.1",
+    "@emotion/react": "^11.11.1",
+    "@emotion/styled": "^11.11.0",
     "@mui/icons-material": "^5.14.9",
-    "node-fetch": "^2.6.1",
+    "@mui/styled-engine": "^5.14.9",
+    "@react-spring/web": "^9.7.3",
+    "axios": "^1.5.0",
+    "fs": "*",
+    "fs.promises": "*",
+    "got": "^13.0.0",
+    "node-fetch": "*",
+    "node-fs": "*",
     "qs": "^6.11.2",
-    "react-tinder-card": "^1.6.2"
+    "react-tinder-card": "^1.6.2",
+    "superagent": "^8.1.2",
+    "util": "^0.12.5"
   },
   "repository": {
     "type": "git",
@@ -36,5 +48,6 @@
   "bugs": {
     "url": "https://github.com/NicTron1/ready-pet-go/issues"
   },
-  "homepage": "https://github.com/NicTron1/ready-pet-go#readme"
+  "homepage": "https://github.com/NicTron1/ready-pet-go#readme",
+  "type": "module"
 }
