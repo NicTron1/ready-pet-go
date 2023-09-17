@@ -19,13 +19,3 @@ The problem: not enough people adopt animals from shelters.
 	—> many people still buy from breeders when they would be even happier with a shelter animal
 
 The solution: increase adoption of shelter animals by creating a fun and interactive user interface for petfinder.com
-
-
-# React + Vite
-
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
-
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
